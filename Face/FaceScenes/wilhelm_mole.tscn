@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=4 uid="uid://clwc4niany5to"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5py6h"]
+resource_name = "Eyes.001"
+cull_mode = 2
+albedo_color = Color(0.321259, 0.200019, 0.0579336, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_wstkm"]
+_surfaces = [{
+"aabb": AABB(0.327533, 0.0371706, 0.402922, 0.0269204, 1e-05, 0.0269205),
+"format": 34896613377,
+"index_count": 42,
+"index_data": PackedByteArray("AAACAAEAAgAEAAMABAAGAAUABgAIAAcACAAKAAkACgAMAAsADAAOAA0ADgAAAA8AAAAEAAIABAAIAAYACAAMAAoADAAAAA4AAAAIAAQACAAAAAwA"),
+"name": "Eyes.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("/38AAAAAAAADTwAAvgkAAH0lAAB9JQAAvgkAAANPAAAAAAAA/38AAL4JAAD7sAAAfSUAAIHaAAADTwAAQPYAAP9/AAD//wAA+7AAAED2AACB2gAAgdoAAED2AAD7sAAA//8AAP9/AABA9gAAA08AAIHaAAB9JQAA+7AAAL4JAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_4pwsd"]
+resource_name = "WilhelmMole_Circle_014"
+_surfaces = [{
+"aabb": AABB(0.327533, 0.0371706, 0.402922, 0.0269204, 1e-05, 0.0269205),
+"attribute_data": PackedByteArray("AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//w=="),
+"format": 34896613399,
+"index_count": 42,
+"index_data": PackedByteArray("AAACAAEAAgAEAAMABAAGAAUABgAIAAcACAAKAAkACgAMAAsADAAOAA0ADgAAAA8AAAAEAAIABAAIAAYACAAMAAoADAAAAA4AAAAIAAQACAAAAAwA"),
+"material": SubResource("StandardMaterial3D_5py6h"),
+"name": "Eyes.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("/38AAAAA/78DTwAAvgn/v30lAAB9Jf+/vgkAAANP/78AAAAA/3//v74JAAD7sP+/fSUAAIHa/78DTwAAQPb/v/9/AAD///+/+7AAAED2/7+B2gAAgdr/v0D2AAD7sP+///8AAP9//79A9gAAA0//v4HaAAB9Jf+/+7AAAL4J/7////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_wstkm")
+
+[node name="WilhelmMole" type="MeshInstance3D"]
+transform = Transform3D(0, 2.32552, 0, -2.32552, 0, 0, 0, 0, 2.32552, 1.83944, 9.6768, -1.3986)
+mesh = SubResource("ArrayMesh_4pwsd")
+skeleton = NodePath("")
