@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlen4pe6slq3u"]
+
+[ext_resource type="PackedScene" uid="uid://b0qgitrf8xr73" path="res://Scenes/Game/PalMenu/pal_menu_ui.tscn" id="1_u4ire"]
+[ext_resource type="Environment" uid="uid://d3smkaiqkm37e" path="res://Enviroments/MultipalSkies.tres" id="2_pd2jt"]
+
+[node name="PalMenuRoot" type="Node3D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="CanvasLayer"]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="SubViewport" type="SubViewport" parent="CanvasLayer/SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1920, 1080)
+render_target_update_mode = 4
+
+[node name="Pal_Menu_UI" parent="CanvasLayer/SubViewportContainer/SubViewport" instance=ExtResource("1_u4ire")]
+
+[node name="Camera3D" type="Camera3D" parent="CanvasLayer/SubViewportContainer/SubViewport"]
+transform = Transform3D(-0.00420236, -0.306562, 0.951842, 0.994932, 0.0943475, 0.0347793, -0.100466, 0.947163, 0.304611, 0, 1.08011, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("2_pd2jt")
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 91, 87, 3)
+light_color = Color(0.984314, 0.984314, 0.996078, 1)
+light_energy = 11.715
+light_indirect_energy = 0.0
+light_volumetric_fog_energy = 0.0
+light_negative = true
+light_bake_mode = 0
+directional_shadow_mode = 1
+directional_shadow_split_1 = 1.0
+directional_shadow_blend_splits = true
+sky_mode = 1
