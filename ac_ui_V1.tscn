@@ -1,0 +1,1310 @@
+[gd_scene load_steps=59 format=3 uid="uid://b4a0s6u2iyqpm"]
+
+[ext_resource type="Script" path="res://Scenes/Game/AlterCreation/AlterCreationUI.gd" id="1_mrdwp"]
+[ext_resource type="Theme" uid="uid://cqpnkrk4vncpa" path="res://UI/DefaultTheme.tres" id="2_t3xaf"]
+[ext_resource type="FontFile" uid="uid://cbjgi785tqagv" path="res://Fonts/Balsamiq_Sans/BalsamiqSans-Regular.ttf" id="3_gghpn"]
+[ext_resource type="StyleBox" uid="uid://brnmt8rkeu778" path="res://UI/DefaultButtonNORMAL.tres" id="4_hg8e1"]
+[ext_resource type="FontFile" uid="uid://dxuh3kxw43qla" path="res://Fonts/Balsamiq_Sans/BalsamiqSans-BoldItalic.ttf" id="5_exqen"]
+[ext_resource type="Texture2D" uid="uid://i4fvk8lauqlp" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Hair/RogerHair.png" id="6_nfypt"]
+[ext_resource type="Theme" uid="uid://b52xvdt5ktrj" path="res://UI/Buttons/instancingBTNs.tres" id="7_5rtbw"]
+[ext_resource type="Texture2D" uid="uid://l52bb2b257u8" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Hair/YorkHair.png" id="8_45jea"]
+[ext_resource type="Texture2D" uid="uid://bprxviutk1k7h" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Hair/ZachHair.png" id="9_1l6y1"]
+[ext_resource type="Texture2D" uid="uid://cuw18l8yx8o6h" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Hair/MarsHair.png" id="10_t8t3s"]
+[ext_resource type="Texture2D" uid="uid://jl6qobdcsie1" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Hair/StatiaHair.png" id="11_ummle"]
+[ext_resource type="Texture2D" uid="uid://dbsamq3xm6nwu" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Hair/DonnyHair.png" id="12_8hdgx"]
+[ext_resource type="Texture2D" uid="uid://cg76dk5g5orvm" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Hair/MandaHair.png" id="13_4maal"]
+[ext_resource type="Texture2D" uid="uid://dq53daydmmesv" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Hair/DavidHair.png" id="14_5tchy"]
+[ext_resource type="Texture2D" uid="uid://ctdc7j2h72upk" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Hair/IsabelleHairPVW.png" id="15_gy7nh"]
+[ext_resource type="Texture2D" uid="uid://c0ibfntab7ign" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Hair/NormanHairPVW.png" id="16_rr04m"]
+[ext_resource type="Texture2D" uid="uid://upcet8d7hbx5" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Hair/AngeloHair.png" id="17_2tq56"]
+[ext_resource type="Texture2D" uid="uid://cxs81nrmsti5k" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/FacialHair/DavidFH.png" id="18_qe132"]
+[ext_resource type="Texture2D" uid="uid://br1j328a5tfam" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/FacialHair/ZachariahFH.png" id="19_easwe"]
+[ext_resource type="Texture2D" uid="uid://ca7qsfsrmgf3h" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/FacialHair/ScottsFH.png" id="20_qftkr"]
+[ext_resource type="Texture2D" uid="uid://ctsl6qn3gavt7" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Brows/RogerBrows.png" id="21_xp3d0"]
+[ext_resource type="Texture2D" uid="uid://bdvesge1foi0m" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Brows/ShaunBrows.png" id="22_7pivr"]
+[ext_resource type="Texture2D" uid="uid://b2kjrqmnmonq5" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Brows/StatiaBrows.png" id="23_snrtt"]
+[ext_resource type="Texture2D" uid="uid://bocx43urqpsd0" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Brows/YorkBrows.png" id="24_yd6ln"]
+[ext_resource type="Texture2D" uid="uid://dvjnj2r6305mw" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Eyes/StatiaEyes.png" id="25_h5jdn"]
+[ext_resource type="Texture2D" uid="uid://b3wcmlsypaxkx" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Eyes/MarsEyes.png" id="26_dxlhm"]
+[ext_resource type="Texture2D" uid="uid://d4fcx2ma6aqmr" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Eyes/YorkEyes.png" id="27_db11x"]
+[ext_resource type="Texture2D" uid="uid://cudyg8eprjc1p" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Eyes/ZachEyes.png" id="28_nfdoo"]
+[ext_resource type="Texture2D" uid="uid://codrkjeddouax" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Eyes/RogerEyes.png" id="29_i8odb"]
+[ext_resource type="Texture2D" uid="uid://dhiaq6nf5woiv" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Eyes/DonnyEyes.png" id="30_71820"]
+[ext_resource type="Texture2D" uid="uid://bhtglf7usseg6" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Eyes/MandaEyes.png" id="31_7mtl6"]
+[ext_resource type="Texture2D" uid="uid://b8wyy7ps6kpis" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Eyes/DavidEyes.png" id="32_hn5ue"]
+[ext_resource type="Texture2D" uid="uid://bgbmn2hvn7at5" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Eyes/NormanEyesPVW.png" id="33_bt4g4"]
+[ext_resource type="Texture2D" uid="uid://irtemclxg54p" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Eyes/AngeloEyes.png" id="34_mi1t7"]
+[ext_resource type="Texture2D" uid="uid://clae1ea04h58p" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Mouths/StatiaMouth.png" id="35_8juhy"]
+[ext_resource type="Texture2D" uid="uid://dlri6b0nl740k" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Mouths/MandaMouth.png" id="36_41fma"]
+[ext_resource type="Texture2D" uid="uid://bx5q1wo6qghdr" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Mouths/DonnyMouth.png" id="37_87fi2"]
+[ext_resource type="Texture2D" uid="uid://6pcypwmnmaac" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Mouths/MarsMouth.png" id="38_6rpi1"]
+[ext_resource type="Texture2D" uid="uid://c713ml2ick8w1" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Mouths/DavidMouth.png" id="39_oc7ib"]
+[ext_resource type="Texture2D" uid="uid://dqq3x08w3u757" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Mouths/NormanMouthPVW.png" id="40_7b6sc"]
+[ext_resource type="Texture2D" uid="uid://cf258ac145jt2" path="res://Scenes/Game/AlterCreation/Cosmetic Thumbnails/Mouths/AngeloMouth.png" id="41_a4dqn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dbepf"]
+bg_color = Color(0.784314, 0.317647, 0.313726, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_begr3"]
+bg_color = Color(0.784314, 0.317647, 0.313726, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qbvf0"]
+bg_color = Color(0.803922, 0.745098, 0.388235, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="Theme" id="Theme_v8kb1"]
+Button/styles/hover = SubResource("StyleBoxFlat_dbepf")
+Button/styles/normal = SubResource("StyleBoxFlat_begr3")
+Button/styles/pressed = SubResource("StyleBoxFlat_qbvf0")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1t003"]
+bg_color = Color(0.717647, 0.8, 0.952941, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(0.796078, 0.854902, 0.964706, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_16neq"]
+bg_color = Color(0.552941, 0.682353, 0.913725, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u83nr"]
+bg_color = Color(0.929412, 0.913725, 0.737255, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a4557"]
+bg_color = Color(1, 1, 1, 0.211765)
+border_width_left = 20
+border_color = Color(0.843137, 0.905882, 0.827451, 0.2)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w172p"]
+bg_color = Color(0.737255, 0.764706, 0.917647, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pxyi7"]
+bg_color = Color(0.552941, 0.682353, 0.913725, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ggkio"]
+bg_color = Color(0.478431, 0.572549, 0.631373, 0.639216)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="Theme" id="Theme_280y8"]
+Button/fonts/font = ExtResource("3_gghpn")
+Button/styles/hover = SubResource("StyleBoxFlat_1t003")
+Button/styles/normal = SubResource("StyleBoxFlat_16neq")
+Button/styles/pressed = ExtResource("4_hg8e1")
+Panel/styles/panel = SubResource("StyleBoxFlat_u83nr")
+TabContainer/colors/font_selected_color = Color(1, 1, 1, 1)
+TabContainer/colors/font_unselected_color = Color(0.963594, 0.974449, 0.99377, 1)
+TabContainer/font_sizes/font_size = 22
+TabContainer/fonts/font = ExtResource("3_gghpn")
+TabContainer/styles/panel = SubResource("StyleBoxFlat_a4557")
+TabContainer/styles/tab_hovered = SubResource("StyleBoxFlat_w172p")
+TabContainer/styles/tab_selected = SubResource("StyleBoxFlat_pxyi7")
+TabContainer/styles/tab_unselected = SubResource("StyleBoxFlat_ggkio")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5fik3"]
+bg_color = Color(0.517647, 0.223529, 0.356863, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uta6l"]
+bg_color = Color(0.854902, 0.517647, 0.658824, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tmj7e"]
+bg_color = Color(0.933333, 0.921569, 0.756863, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(0.839216, 0.839216, 0.839216, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_661dv"]
+bg_color = Color(0.933333, 0.745098, 0.815686, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="Theme" id="Theme_bpex4"]
+Button/fonts/font = ExtResource("3_gghpn")
+Button/styles/hover = SubResource("StyleBoxFlat_5fik3")
+Button/styles/normal = SubResource("StyleBoxFlat_uta6l")
+Button/styles/pressed = SubResource("StyleBoxFlat_tmj7e")
+Panel/styles/panel = SubResource("StyleBoxFlat_661dv")
+TabContainer/colors/font_selected_color = Color(1, 1, 1, 1)
+TabContainer/colors/font_unselected_color = Color(0.963594, 0.974449, 0.99377, 1)
+TabContainer/font_sizes/font_size = 22
+TabContainer/fonts/font = ExtResource("3_gghpn")
+TabContainer/styles/panel = SubResource("StyleBoxFlat_a4557")
+TabContainer/styles/tab_hovered = SubResource("StyleBoxFlat_w172p")
+TabContainer/styles/tab_selected = SubResource("StyleBoxFlat_pxyi7")
+TabContainer/styles/tab_unselected = SubResource("StyleBoxFlat_ggkio")
+
+[node name="AC_UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mrdwp")
+metadata/_edit_use_anchors_ = true
+
+[node name="SceneNavigation" type="Control" parent="."]
+layout_mode = 1
+anchor_left = 0.00833333
+anchor_right = 1.00833
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Main Menu" type="Button" parent="SceneNavigation"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0625
+anchor_top = 0.793878
+anchor_right = 0.152604
+anchor_bottom = 0.87551
+offset_right = -0.999542
+theme = ExtResource("2_t3xaf")
+theme_override_font_sizes/font_size = 26
+text = "Main Menu"
+metadata/_edit_use_anchors_ = true
+
+[node name="Reset" type="Button" parent="SceneNavigation"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.270833
+anchor_top = 0.794898
+anchor_right = 0.354687
+anchor_bottom = 0.880612
+offset_right = -0.99971
+theme = ExtResource("2_t3xaf")
+theme_override_font_sizes/font_size = 26
+text = "Reset"
+metadata/_edit_use_anchors_ = true
+
+[node name="Pal Menu" type="Button" parent="SceneNavigation"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.158333
+anchor_top = 0.797959
+anchor_right = 0.263021
+anchor_bottom = 0.876531
+offset_right = -0.999542
+theme = ExtResource("2_t3xaf")
+theme_override_font_sizes/font_size = 26
+text = "Pal Menu"
+metadata/_edit_use_anchors_ = true
+
+[node name="Quit" type="Button" parent="SceneNavigation"]
+z_index = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.916667
+anchor_top = 0.0163265
+anchor_right = 0.983333
+anchor_bottom = 0.0938776
+theme = SubResource("Theme_v8kb1")
+theme_override_font_sizes/font_size = 26
+text = "X"
+metadata/_edit_use_anchors_ = true
+
+[node name="PinkPanel" type="Panel" parent="SceneNavigation/Quit"]
+visible = false
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -10.8873
+anchor_top = 3.78947
+anchor_right = -1.59263
+anchor_bottom = 7.89473
+offset_right = 6.10352e-05
+theme = ExtResource("2_t3xaf")
+metadata/_edit_use_anchors_ = true
+
+[node name="YellowPanel" type="Panel" parent="SceneNavigation/Quit/PinkPanel"]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0508995
+anchor_top = 0.0705123
+anchor_right = 0.965399
+anchor_bottom = 0.907051
+offset_right = -0.00012207
+theme = SubResource("Theme_280y8")
+metadata/_edit_use_anchors_ = true
+
+[node name="Prompt" type="Label" parent="SceneNavigation/Quit/PinkPanel/YellowPanel"]
+layout_mode = 0
+anchor_left = 0.367653
+anchor_top = 0.183908
+anchor_right = 0.610304
+anchor_bottom = 0.413793
+theme_override_colors/font_color = Color(0.482353, 0.372549, 0.2, 1)
+theme_override_fonts/font = ExtResource("5_exqen")
+theme_override_font_sizes/font_size = 49
+text = "Quit Game?"
+metadata/_edit_use_anchors_ = true
+
+[node name="Yes" type="Button" parent="SceneNavigation/Quit/PinkPanel/YellowPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.213239
+anchor_top = 0.490421
+anchor_right = 0.399212
+anchor_bottom = 0.828489
+theme = SubResource("Theme_bpex4")
+theme_override_font_sizes/font_size = 26
+text = "Yes"
+metadata/_edit_use_anchors_ = true
+
+[node name="No" type="Button" parent="SceneNavigation/Quit/PinkPanel/YellowPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.549642
+anchor_top = 0.498084
+anchor_right = 0.735615
+anchor_bottom = 0.836151
+offset_right = 0.000488281
+mouse_filter = 1
+theme = SubResource("Theme_bpex4")
+theme_override_font_sizes/font_size = 26
+text = "No
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="QuitControl" type="Control" parent="SceneNavigation"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1264.0
+offset_top = -96.0
+offset_right = 1304.0
+offset_bottom = -56.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SkinTone" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.707812
+anchor_top = 0.453061
+anchor_right = 0.789063
+anchor_bottom = 0.514286
+offset_left = 6.10352e-05
+offset_top = 1.52588e-05
+theme = ExtResource("2_t3xaf")
+text = "Skin"
+metadata/_edit_use_anchors_ = true
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.65
+anchor_top = 0.530612
+anchor_right = 0.938021
+anchor_bottom = 0.906122
+offset_right = 41.9998
+theme = ExtResource("2_t3xaf")
+theme_override_font_sizes/font_size = 30
+current_tab = 0
+clip_tabs = false
+metadata/_edit_use_anchors_ = true
+
+[node name="Hair" type="TabBar" parent="TabContainer"]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="ColorPicker" type="ColorPicker" parent="TabContainer/Hair"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.815652
+anchor_top = -1.32877
+anchor_right = -0.297391
+anchor_bottom = 1.15068
+theme = ExtResource("2_t3xaf")
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="RemoveHair" type="Button" parent="TabContainer/Hair"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.452174
+anchor_top = -0.520548
+anchor_right = 0.730435
+anchor_bottom = -0.315069
+offset_bottom = 1.52588e-05
+theme = ExtResource("2_t3xaf")
+text = "Remove"
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Hair"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0439024
+anchor_top = 0.0679612
+anchor_right = 0.912195
+anchor_bottom = 0.92233
+
+[node name="GridContainer" type="GridContainer" parent="TabContainer/Hair/ScrollContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+theme_override_constants/h_separation = 70
+theme_override_constants/v_separation = 50
+columns = 3
+
+[node name="RogerHairPVW" type="TextureRect" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme = ExtResource("2_t3xaf")
+texture = ExtResource("6_nfypt")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="RogerHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/RogerHairPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.239999
+anchor_top = -0.08
+anchor_right = 1.2
+anchor_bottom = 1.2
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="YorkHairPVW" type="TextureRect" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("8_45jea")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="YorkHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/YorkHairPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.16
+anchor_top = -0.16
+anchor_right = 1.28
+anchor_bottom = 1.12
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="ZachHairPVW" type="TextureRect" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("9_1l6y1")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ZachHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/ZachHairPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.16
+anchor_top = -0.16
+anchor_right = 1.28
+anchor_bottom = 1.12
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="MarsHairPVW" type="TextureRect" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("10_t8t3s")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MarsHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/MarsHairPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.24
+anchor_top = -0.16
+anchor_right = 1.2
+anchor_bottom = 1.12
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="StatiaHairPVW" type="TextureRect" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("11_ummle")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="StatiaHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/StatiaHairPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.24
+anchor_top = -0.08
+anchor_right = 1.2
+anchor_bottom = 1.2
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="DonnyHairPVW" type="TextureRect" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("12_8hdgx")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DonnyHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/DonnyHairPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.24
+anchor_top = -0.16
+anchor_right = 1.2
+anchor_bottom = 1.12
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="MandaHairPVW" type="TextureRect" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("13_4maal")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MandaHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/MandaHairPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.24
+anchor_top = -0.08
+anchor_right = 1.2
+anchor_bottom = 1.2
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="DavidHairPVW" type="TextureRect" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("14_5tchy")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DavidHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/DavidHairPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.2
+anchor_top = -0.1
+anchor_right = 1.24
+anchor_bottom = 1.18
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="IsabelleHairPVW" type="TextureRect" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("15_gy7nh")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="IsabelleHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/IsabelleHairPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.239999
+anchor_top = -0.08
+anchor_right = 1.2
+anchor_bottom = 1.2
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="NormanHairPVW" type="TextureRect" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("16_rr04m")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="NormanHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/NormanHairPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.239999
+anchor_top = -0.08
+anchor_right = 1.2
+anchor_bottom = 1.2
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="AngeloHairPVW" type="TextureRect" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("17_2tq56")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="AngeloHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/AngeloHairPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.239999
+anchor_top = -0.08
+anchor_right = 1.2
+anchor_bottom = 1.2
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="Beards" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="FacialHairColorPicker" type="ColorPicker" parent="TabContainer/Beards"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.815652
+anchor_top = -1.31507
+anchor_right = -0.297391
+anchor_bottom = 1.16438
+theme = ExtResource("2_t3xaf")
+metadata/_edit_use_anchors_ = true
+
+[node name="RemoveFacialHair" type="Button" parent="TabContainer/Beards"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.452174
+anchor_top = -0.520548
+anchor_right = 0.730435
+anchor_bottom = -0.315068
+theme = ExtResource("2_t3xaf")
+text = "Remove"
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Beards"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0439024
+anchor_top = 0.0679612
+anchor_right = 0.912195
+anchor_bottom = 0.92233
+
+[node name="GridContainer" type="GridContainer" parent="TabContainer/Beards/ScrollContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+theme_override_constants/h_separation = 70
+theme_override_constants/v_separation = 50
+columns = 3
+
+[node name="DavidFacialHairPVW" type="TextureRect" parent="TabContainer/Beards/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("18_qe132")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DavidFacialHairBTN" type="Button" parent="TabContainer/Beards/ScrollContainer/GridContainer/DavidFacialHairPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.24
+anchor_top = -0.16
+anchor_right = 1.2
+anchor_bottom = 1.12
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="ZachariahFacialHairPVW" type="TextureRect" parent="TabContainer/Beards/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("19_easwe")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ZachariahFacialHairBTN" type="Button" parent="TabContainer/Beards/ScrollContainer/GridContainer/ZachariahFacialHairPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.239999
+anchor_top = -0.08
+anchor_right = 1.2
+anchor_bottom = 1.2
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="ScottsFacialHairPVW" type="TextureRect" parent="TabContainer/Beards/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("20_qftkr")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ScottsFacialHairBTN" type="Button" parent="TabContainer/Beards/ScrollContainer/GridContainer/ScottsFacialHairPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.239999
+anchor_top = -0.08
+anchor_right = 1.2
+anchor_bottom = 1.2
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="Brows" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="BrowsColorPicker" type="ColorPicker" parent="TabContainer/Brows"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.813913
+anchor_top = -1.31507
+anchor_right = -0.295652
+anchor_bottom = 1.16438
+theme = ExtResource("2_t3xaf")
+metadata/_edit_use_anchors_ = true
+
+[node name="RemoveBrows" type="Button" parent="TabContainer/Brows"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.452174
+anchor_top = -0.520548
+anchor_right = 0.730435
+anchor_bottom = -0.315068
+theme = ExtResource("2_t3xaf")
+text = "Remove"
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Brows"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0439024
+anchor_top = 0.0679612
+anchor_right = 0.912195
+anchor_bottom = 0.92233
+
+[node name="GridContainer" type="GridContainer" parent="TabContainer/Brows/ScrollContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+theme_override_constants/h_separation = 70
+theme_override_constants/v_separation = 50
+columns = 3
+
+[node name="RogerBrowsPVW" type="TextureRect" parent="TabContainer/Brows/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("21_xp3d0")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="RogerBrowsBTN" type="Button" parent="TabContainer/Brows/ScrollContainer/GridContainer/RogerBrowsPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.239999
+anchor_top = -0.08
+anchor_right = 1.2
+anchor_bottom = 1.2
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="ShaunBrowsPVW" type="TextureRect" parent="TabContainer/Brows/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("22_7pivr")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ShaunBrowsBTN" type="Button" parent="TabContainer/Brows/ScrollContainer/GridContainer/ShaunBrowsPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.239999
+anchor_top = -0.08
+anchor_right = 1.2
+anchor_bottom = 1.2
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="statia_brows_PVW" type="TextureRect" parent="TabContainer/Brows/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("23_snrtt")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="statia_brows_BTN" type="Button" parent="TabContainer/Brows/ScrollContainer/GridContainer/statia_brows_PVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.239999
+anchor_top = -0.08
+anchor_right = 1.2
+anchor_bottom = 1.2
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="york_brows_PVW" type="TextureRect" parent="TabContainer/Brows/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("24_yd6ln")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="york_brows_BTN" type="Button" parent="TabContainer/Brows/ScrollContainer/GridContainer/york_brows_PVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.239999
+anchor_top = -0.08
+anchor_right = 1.2
+anchor_bottom = 1.2
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="Eyes" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_edit_lock_ = true
+metadata/_tab_index = 3
+
+[node name="RemoveEyes" type="Button" parent="TabContainer/Eyes"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.452174
+anchor_top = -0.520548
+anchor_right = 0.730435
+anchor_bottom = -0.315069
+offset_bottom = 3.05176e-05
+theme = ExtResource("2_t3xaf")
+text = "Remove"
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Eyes"]
+layout_mode = 2
+anchor_left = 0.0573171
+anchor_top = 0.0679612
+anchor_right = 0.92561
+anchor_bottom = 0.92233
+metadata/_edit_use_anchors_ = true
+
+[node name="GridContainer" type="GridContainer" parent="TabContainer/Eyes/ScrollContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+theme_override_constants/h_separation = 70
+theme_override_constants/v_separation = 50
+columns = 3
+
+[node name="StatiaEyesPVW" type="TextureRect" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("25_h5jdn")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="StatiaEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/StatiaEyesPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 8.06
+anchor_top = 8.13
+anchor_right = 9.34692
+anchor_bottom = 9.36063
+offset_left = -826.0
+offset_top = -826.0
+offset_right = -810.692
+offset_bottom = -821.063
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="MarsEyesPVW" type="TextureRect" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("26_dxlhm")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MarsEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/MarsEyesPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.24
+anchor_top = -0.16
+anchor_right = 1.2
+anchor_bottom = 1.12
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="YorkEyesPVW" type="TextureRect" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("27_db11x")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="YorkEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/YorkEyesPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.24
+anchor_top = -0.16
+anchor_right = 1.2
+anchor_bottom = 1.12
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="ZachEyesPVW" type="TextureRect" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("28_nfdoo")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ZachEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/ZachEyesPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.24
+anchor_top = -0.16
+anchor_right = 1.2
+anchor_bottom = 1.12
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="RogerHairPVW" type="TextureRect" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("29_i8odb")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="RogerEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/RogerHairPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.24
+anchor_top = -0.16
+anchor_right = 1.2
+anchor_bottom = 1.12
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="DonnyEyesPVW" type="TextureRect" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("30_71820")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DonnyEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/DonnyEyesPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.24
+anchor_top = -0.08
+anchor_right = 1.2
+anchor_bottom = 1.2
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="MandaEyesPVW" type="TextureRect" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("31_7mtl6")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MandaEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/MandaEyesPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.24
+anchor_top = -0.16
+anchor_right = 1.2
+anchor_bottom = 1.12
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="DavidEyesPVW" type="TextureRect" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("32_hn5ue")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DavidEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/DavidEyesPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.23
+anchor_top = -0.13
+anchor_right = 1.21
+anchor_bottom = 1.15
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="NormanEyesPVW" type="TextureRect" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("33_bt4g4")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="NormanEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/NormanEyesPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.239999
+anchor_top = -0.08
+anchor_right = 1.2
+anchor_bottom = 1.2
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="AngeloEyesPVW" type="TextureRect" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("34_mi1t7")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="AngeloEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/AngeloEyesPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.239999
+anchor_top = -0.08
+anchor_right = 1.2
+anchor_bottom = 1.2
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="Mouth" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 4
+
+[node name="RemoveMouths" type="Button" parent="TabContainer/Mouth"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.452174
+anchor_top = -0.520548
+anchor_right = 0.730435
+anchor_bottom = -0.315068
+theme = ExtResource("2_t3xaf")
+text = "Remove"
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Mouth"]
+layout_mode = 0
+anchor_left = 0.0439024
+anchor_top = 0.0679612
+anchor_right = 0.912195
+anchor_bottom = 0.92233
+
+[node name="GridContainer" type="GridContainer" parent="TabContainer/Mouth/ScrollContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+theme_override_constants/h_separation = 70
+theme_override_constants/v_separation = 50
+columns = 3
+
+[node name="StatiaMouthPVW" type="TextureRect" parent="TabContainer/Mouth/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("35_8juhy")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="StatiaMouthBTN" type="Button" parent="TabContainer/Mouth/ScrollContainer/GridContainer/StatiaMouthPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.24
+anchor_top = -0.16
+anchor_right = 1.2
+anchor_bottom = 1.12
+offset_bottom = -6.10352e-05
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="MandaMouthPVW" type="TextureRect" parent="TabContainer/Mouth/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("36_41fma")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MandaMouthBTN" type="Button" parent="TabContainer/Mouth/ScrollContainer/GridContainer/MandaMouthPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.24
+anchor_top = -0.16
+anchor_right = 1.2
+anchor_bottom = 1.12
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="DonnyMouthPVW" type="TextureRect" parent="TabContainer/Mouth/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("37_87fi2")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DonnyMouthBTN" type="Button" parent="TabContainer/Mouth/ScrollContainer/GridContainer/DonnyMouthPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.24
+anchor_top = -0.16
+anchor_right = 1.2
+anchor_bottom = 1.12
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="MarsMouthPVW" type="TextureRect" parent="TabContainer/Mouth/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("38_6rpi1")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MarsMouthBTN" type="Button" parent="TabContainer/Mouth/ScrollContainer/GridContainer/MarsMouthPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.24
+anchor_top = -0.16
+anchor_right = 1.2
+anchor_bottom = 1.12
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="DavidMouthPVW" type="TextureRect" parent="TabContainer/Mouth/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("39_oc7ib")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DavidMouthBTN" type="Button" parent="TabContainer/Mouth/ScrollContainer/GridContainer/DavidMouthPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.24
+anchor_top = -0.16
+anchor_right = 1.2
+anchor_bottom = 1.12
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="NormanMouthPVW" type="TextureRect" parent="TabContainer/Mouth/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("40_7b6sc")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="NormanMouthBTN" type="Button" parent="TabContainer/Mouth/ScrollContainer/GridContainer/NormanMouthPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.239999
+anchor_top = -0.08
+anchor_right = 1.2
+anchor_bottom = 1.2
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[node name="AngeloMouthPVW" type="TextureRect" parent="TabContainer/Mouth/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("41_a4dqn")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="AngeloMouthBTN" type="Button" parent="TabContainer/Mouth/ScrollContainer/GridContainer/AngeloMouthPVW"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.239999
+anchor_top = -0.08
+anchor_right = 1.2
+anchor_bottom = 1.2
+theme = ExtResource("7_5rtbw")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="SceneNavigation/Main Menu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="SceneNavigation/Reset" to="." method="_on_reset_pressed"]
+[connection signal="pressed" from="SceneNavigation/Pal Menu" to="." method="_on_pal_menu_pressed"]
+[connection signal="pressed" from="SceneNavigation/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="SceneNavigation/Quit/PinkPanel/YellowPanel/Yes" to="." method="_on_no_pressed"]
+[connection signal="pressed" from="SceneNavigation/Quit/PinkPanel/YellowPanel/Yes" to="." method="_on_yes_pressed"]
+[connection signal="pressed" from="SceneNavigation/Quit/PinkPanel/YellowPanel/No" to="." method="_on_no_pressed"]
+[connection signal="pressed" from="SkinTone" to="." method="_on_skin_tone_pressed"]
+[connection signal="color_changed" from="TabContainer/Hair/ColorPicker" to="." method="_on_color_picker_color_changed"]
+[connection signal="pressed" from="TabContainer/Hair/RemoveHair" to="." method="_on_remove_hair_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/RogerHairPVW/RogerHairBTN" to="." method="_on_roger_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/YorkHairPVW/YorkHairBTN" to="." method="_on_york_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/ZachHairPVW/ZachHairBTN" to="." method="_on_zach_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/MarsHairPVW/MarsHairBTN" to="." method="_on_mars_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/StatiaHairPVW/StatiaHairBTN" to="." method="_on_statia_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/DonnyHairPVW/DonnyHairBTN" to="." method="_on_donny_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/MandaHairPVW/MandaHairBTN" to="." method="_on_manda_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/DavidHairPVW/DavidHairBTN" to="." method="_on_david_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/IsabelleHairPVW/IsabelleHairBTN" to="." method="_on_isabelle_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/NormanHairPVW/NormanHairBTN" to="." method="_on_norman_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/AngeloHairPVW/AngeloHairBTN" to="." method="_on_angelo_hair_btn_pressed"]
+[connection signal="color_changed" from="TabContainer/Beards/FacialHairColorPicker" to="." method="_on_facial_hair_color_picker_color_changed"]
+[connection signal="pressed" from="TabContainer/Beards/RemoveFacialHair" to="." method="_on_remove_facial_hair_pressed"]
+[connection signal="pressed" from="TabContainer/Beards/ScrollContainer/GridContainer/DavidFacialHairPVW/DavidFacialHairBTN" to="." method="_on_david_facial_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Beards/ScrollContainer/GridContainer/ZachariahFacialHairPVW/ZachariahFacialHairBTN" to="." method="_on_zachariah_facial_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Beards/ScrollContainer/GridContainer/ScottsFacialHairPVW/ScottsFacialHairBTN" to="." method="_on_scotts_facial_hair_btn_pressed"]
+[connection signal="color_changed" from="TabContainer/Brows/BrowsColorPicker" to="." method="_on_brows_color_picker_color_changed"]
+[connection signal="pressed" from="TabContainer/Brows/RemoveBrows" to="." method="_on_remove_brows_pressed"]
+[connection signal="pressed" from="TabContainer/Brows/ScrollContainer/GridContainer/RogerBrowsPVW/RogerBrowsBTN" to="." method="_on_roger_brows_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Brows/ScrollContainer/GridContainer/ShaunBrowsPVW/ShaunBrowsBTN" to="." method="_on_shaun_brows_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Brows/ScrollContainer/GridContainer/statia_brows_PVW/statia_brows_BTN" to="." method="_on_statia_brows_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Brows/ScrollContainer/GridContainer/york_brows_PVW/york_brows_BTN" to="." method="_on_york_brows_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/RemoveEyes" to="." method="_on_remove_eyes_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/StatiaEyesPVW/StatiaEyesBTN" to="." method="_on_statia_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/MarsEyesPVW/MarsEyesBTN" to="." method="_on_mars_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/YorkEyesPVW/YorkEyesBTN" to="." method="_on_york_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/ZachEyesPVW/ZachEyesBTN" to="." method="_on_zach_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/RogerHairPVW/RogerEyesBTN" to="." method="_on_roger_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/DonnyEyesPVW/DonnyEyesBTN" to="." method="_on_donny_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/MandaEyesPVW/MandaEyesBTN" to="." method="_on_manda_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/DavidEyesPVW/DavidEyesBTN" to="." method="_on_david_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/NormanEyesPVW/NormanEyesBTN" to="." method="_on_norman_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/AngeloEyesPVW/AngeloEyesBTN" to="." method="_on_angelo_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Mouth/RemoveMouths" to="." method="_on_remove_mouths_pressed"]
+[connection signal="pressed" from="TabContainer/Mouth/ScrollContainer/GridContainer/StatiaMouthPVW/StatiaMouthBTN" to="." method="_on_statia_mouth_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Mouth/ScrollContainer/GridContainer/MandaMouthPVW/MandaMouthBTN" to="." method="_on_manda_mouth_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Mouth/ScrollContainer/GridContainer/DonnyMouthPVW/DonnyMouthBTN" to="." method="_on_donny_mouth_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Mouth/ScrollContainer/GridContainer/MarsMouthPVW/MarsMouthBTN" to="." method="_on_mars_mouth_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Mouth/ScrollContainer/GridContainer/DavidMouthPVW/DavidMouthBTN" to="." method="_on_david_mouth_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Mouth/ScrollContainer/GridContainer/NormanMouthPVW/NormanMouthBTN" to="." method="_on_norman_mouth_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Mouth/ScrollContainer/GridContainer/AngeloMouthPVW/AngeloMouthBTN" to="." method="_on_angelo_mouth_btn_pressed"]

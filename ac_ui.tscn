@@ -1,0 +1,1863 @@
+[gd_scene load_steps=26 format=3 uid="uid://dc701n886qcmn"]
+
+[ext_resource type="Script" path="res://Scenes/Game/AlterCreation/AlterCreationUI.gd" id="1_b8uxh"]
+[ext_resource type="Theme" uid="uid://cqpnkrk4vncpa" path="res://UI/DefaultTheme.tres" id="2_4fllo"]
+[ext_resource type="FontFile" uid="uid://cbjgi785tqagv" path="res://Fonts/Balsamiq_Sans/BalsamiqSans-Regular.ttf" id="3_fjgsu"]
+[ext_resource type="StyleBox" uid="uid://brnmt8rkeu778" path="res://UI/DefaultButtonNORMAL.tres" id="4_0xyky"]
+[ext_resource type="Theme" uid="uid://b52xvdt5ktrj" path="res://UI/Buttons/instancingBTNs.tres" id="4_5csx1"]
+[ext_resource type="FontFile" uid="uid://dxuh3kxw43qla" path="res://Fonts/Balsamiq_Sans/BalsamiqSans-BoldItalic.ttf" id="5_3uo0o"]
+[ext_resource type="FontFile" uid="uid://bkaa0uquobx2q" path="res://Fonts/Madimi_One/MadimiOne-Regular.ttf" id="6_pcgp6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dbepf"]
+bg_color = Color(0.784314, 0.317647, 0.313726, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_begr3"]
+bg_color = Color(0.784314, 0.317647, 0.313726, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qbvf0"]
+bg_color = Color(0.803922, 0.745098, 0.388235, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="Theme" id="Theme_v8kb1"]
+Button/styles/hover = SubResource("StyleBoxFlat_dbepf")
+Button/styles/normal = SubResource("StyleBoxFlat_begr3")
+Button/styles/pressed = SubResource("StyleBoxFlat_qbvf0")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1t003"]
+bg_color = Color(0.717647, 0.8, 0.952941, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(0.796078, 0.854902, 0.964706, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_16neq"]
+bg_color = Color(0.552941, 0.682353, 0.913725, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u83nr"]
+bg_color = Color(0.929412, 0.913725, 0.737255, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a4557"]
+bg_color = Color(1, 1, 1, 0.211765)
+border_width_left = 20
+border_color = Color(0.843137, 0.905882, 0.827451, 0.2)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w172p"]
+bg_color = Color(0.737255, 0.764706, 0.917647, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pxyi7"]
+bg_color = Color(0.552941, 0.682353, 0.913725, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ggkio"]
+bg_color = Color(0.478431, 0.572549, 0.631373, 0.639216)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="Theme" id="Theme_280y8"]
+Button/fonts/font = ExtResource("3_fjgsu")
+Button/styles/hover = SubResource("StyleBoxFlat_1t003")
+Button/styles/normal = SubResource("StyleBoxFlat_16neq")
+Button/styles/pressed = ExtResource("4_0xyky")
+Panel/styles/panel = SubResource("StyleBoxFlat_u83nr")
+TabContainer/colors/font_selected_color = Color(1, 1, 1, 1)
+TabContainer/colors/font_unselected_color = Color(0.963594, 0.974449, 0.99377, 1)
+TabContainer/font_sizes/font_size = 22
+TabContainer/fonts/font = ExtResource("3_fjgsu")
+TabContainer/styles/panel = SubResource("StyleBoxFlat_a4557")
+TabContainer/styles/tab_hovered = SubResource("StyleBoxFlat_w172p")
+TabContainer/styles/tab_selected = SubResource("StyleBoxFlat_pxyi7")
+TabContainer/styles/tab_unselected = SubResource("StyleBoxFlat_ggkio")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5fik3"]
+bg_color = Color(0.517647, 0.223529, 0.356863, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uta6l"]
+bg_color = Color(0.854902, 0.517647, 0.658824, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tmj7e"]
+bg_color = Color(0.933333, 0.921569, 0.756863, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(0.839216, 0.839216, 0.839216, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_661dv"]
+bg_color = Color(0.933333, 0.745098, 0.815686, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 10
+
+[sub_resource type="Theme" id="Theme_bpex4"]
+Button/fonts/font = ExtResource("3_fjgsu")
+Button/styles/hover = SubResource("StyleBoxFlat_5fik3")
+Button/styles/normal = SubResource("StyleBoxFlat_uta6l")
+Button/styles/pressed = SubResource("StyleBoxFlat_tmj7e")
+Panel/styles/panel = SubResource("StyleBoxFlat_661dv")
+TabContainer/colors/font_selected_color = Color(1, 1, 1, 1)
+TabContainer/colors/font_unselected_color = Color(0.963594, 0.974449, 0.99377, 1)
+TabContainer/font_sizes/font_size = 22
+TabContainer/fonts/font = ExtResource("3_fjgsu")
+TabContainer/styles/panel = SubResource("StyleBoxFlat_a4557")
+TabContainer/styles/tab_hovered = SubResource("StyleBoxFlat_w172p")
+TabContainer/styles/tab_selected = SubResource("StyleBoxFlat_pxyi7")
+TabContainer/styles/tab_unselected = SubResource("StyleBoxFlat_ggkio")
+
+[sub_resource type="LabelSettings" id="LabelSettings_12wlj"]
+line_spacing = 20.0
+font = ExtResource("6_pcgp6")
+font_size = 20
+font_color = Color(0.43134, 0.43134, 0.43134, 1)
+outline_size = 10
+outline_color = Color(0.753199, 0.788655, 0.783044, 1)
+
+[node name="AC_UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b8uxh")
+metadata/_edit_use_anchors_ = true
+
+[node name="SceneNavigation" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="Main Menu" type="Button" parent="SceneNavigation"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.708334
+anchor_top = 0.0163265
+anchor_right = 0.798438
+anchor_bottom = 0.0979587
+offset_right = -0.999542
+scale = Vector2(1, 1.08)
+theme = ExtResource("2_4fllo")
+theme_override_font_sizes/font_size = 26
+text = "Main Menu"
+metadata/_edit_use_anchors_ = true
+
+[node name="Reset" type="Button" parent="SceneNavigation"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.8125
+anchor_top = 0.0163265
+anchor_right = 0.896354
+anchor_bottom = 0.102041
+offset_right = -0.99971
+theme = ExtResource("2_4fllo")
+theme_override_font_sizes/font_size = 26
+text = "Reset"
+metadata/_edit_use_anchors_ = true
+
+[node name="Pal Menu" type="Button" parent="SceneNavigation"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.591667
+anchor_top = 0.0163265
+anchor_right = 0.696355
+anchor_bottom = 0.0948987
+offset_right = -0.999542
+scale = Vector2(1, 1.12)
+theme = ExtResource("2_4fllo")
+theme_override_font_sizes/font_size = 26
+text = "Pal Menu"
+metadata/_edit_use_anchors_ = true
+
+[node name="Quit" type="Button" parent="SceneNavigation"]
+z_index = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.916667
+anchor_top = 0.0163265
+anchor_right = 0.983333
+anchor_bottom = 0.0938776
+theme = SubResource("Theme_v8kb1")
+theme_override_font_sizes/font_size = 26
+text = "X"
+metadata/_edit_use_anchors_ = true
+
+[node name="PinkPanel" type="Panel" parent="SceneNavigation/Quit"]
+visible = false
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -10.8873
+anchor_top = 3.78947
+anchor_right = -1.59263
+anchor_bottom = 7.89473
+offset_right = 6.10352e-05
+theme = ExtResource("2_4fllo")
+metadata/_edit_use_anchors_ = true
+
+[node name="YellowPanel" type="Panel" parent="SceneNavigation/Quit/PinkPanel"]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0508995
+anchor_top = 0.0705123
+anchor_right = 0.965399
+anchor_bottom = 0.907051
+offset_right = -0.00012207
+theme = SubResource("Theme_280y8")
+metadata/_edit_use_anchors_ = true
+
+[node name="Prompt" type="Label" parent="SceneNavigation/Quit/PinkPanel/YellowPanel"]
+layout_mode = 0
+anchor_left = 0.367653
+anchor_top = 0.183908
+anchor_right = 0.610304
+anchor_bottom = 0.413793
+theme_override_colors/font_color = Color(0.482353, 0.372549, 0.2, 1)
+theme_override_fonts/font = ExtResource("5_3uo0o")
+theme_override_font_sizes/font_size = 49
+text = "Quit Game?"
+metadata/_edit_use_anchors_ = true
+
+[node name="Yes" type="Button" parent="SceneNavigation/Quit/PinkPanel/YellowPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.213239
+anchor_top = 0.490421
+anchor_right = 0.399212
+anchor_bottom = 0.828489
+theme = SubResource("Theme_bpex4")
+theme_override_font_sizes/font_size = 26
+text = "Yes"
+metadata/_edit_use_anchors_ = true
+
+[node name="No" type="Button" parent="SceneNavigation/Quit/PinkPanel/YellowPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.549642
+anchor_top = 0.498084
+anchor_right = 0.735615
+anchor_bottom = 0.836151
+offset_right = 0.000488281
+mouse_filter = 1
+theme = SubResource("Theme_bpex4")
+theme_override_font_sizes/font_size = 26
+text = "No
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="QuitControl" type="Control" parent="SceneNavigation"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1272.0
+offset_top = -90.0
+offset_right = 1312.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SkinTone" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.266146
+anchor_top = 0.311224
+anchor_right = 0.354167
+anchor_bottom = 0.389592
+offset_bottom = -16.8001
+scale = Vector2(1, 1.28)
+theme = ExtResource("2_4fllo")
+text = "Skin"
+metadata/_edit_use_anchors_ = true
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0291667
+anchor_top = 0.408163
+anchor_right = 0.346949
+anchor_bottom = 0.734271
+offset_right = 1.85889
+offset_bottom = -50.5854
+scale = Vector2(0.996876, 1.18805)
+theme = ExtResource("2_4fllo")
+theme_override_font_sizes/font_size = 30
+current_tab = 4
+all_tabs_in_front = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Hair" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="ColorPicker" type="ColorPicker" parent="TabContainer/Hair"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.246095
+anchor_top = -1.85915
+anchor_right = 0.720877
+anchor_bottom = -0.138945
+theme = ExtResource("2_4fllo")
+edit_alpha = false
+picker_shape = 1
+color_modes_visible = false
+sliders_visible = false
+hex_visible = false
+presets_visible = false
+metadata/_edit_use_anchors_ = true
+
+[node name="RemoveHair" type="Button" parent="TabContainer/Hair"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0347826
+anchor_top = -0.740931
+anchor_right = 0.217391
+anchor_bottom = -0.430049
+theme = ExtResource("2_4fllo")
+text = "Remove"
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Hair"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.093264
+anchor_right = 0.984349
+anchor_bottom = 0.963728
+metadata/_edit_use_anchors_ = true
+
+[node name="GridContainer" type="GridContainer" parent="TabContainer/Hair/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+theme_override_constants/v_separation = -10
+
+[node name="RogerHairLBL" type="Label" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Roger's Sideswept Bangs"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="RogerHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/RogerHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.565762
+anchor_top = 0.18
+anchor_right = 1.52196
+anchor_bottom = 0.78
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="YorkHairLBL" type="Label" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "York's Extra Hair Gel Style"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="YorkHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/YorkHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.566125
+anchor_top = 0.192131
+anchor_right = 1.52159
+anchor_bottom = 0.792131
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="ZachHairLBL" type="Label" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Zach's Fluffy Sheep Hair"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ZachHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/ZachHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.561647
+anchor_top = 0.179526
+anchor_right = 1.51871
+anchor_bottom = 0.799526
+offset_right = 1.64899
+offset_bottom = -2.0
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="MarsHairLBL" type="Label" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Mars' Shaggy Bangs"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MarsHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/MarsHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.588586
+anchor_top = 0.229526
+anchor_right = 1.49913
+anchor_bottom = 0.829526
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="StatiaHairLBL" type="Label" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Statia's Low Ponytail"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="StatiaHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/StatiaHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.59312
+anchor_top = 0.126547
+anchor_right = 1.4946
+anchor_bottom = 0.726547
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="DonnyHairLBL" type="Label" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Donny's Emo Bangs"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DonnyHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/DonnyHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.59312
+anchor_top = 0.163942
+anchor_right = 1.4946
+anchor_bottom = 0.763942
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="MandaHairLBL" type="Label" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Manda's Long Strands"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MandaHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/MandaHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.584038
+anchor_top = 0.196446
+anchor_right = 1.50368
+anchor_bottom = 0.796446
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="DavidHairLBL" type="Label" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "David's Anime Boy Crush"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DavidHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/DavidHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.561772
+anchor_top = 0.171397
+anchor_right = 1.52595
+anchor_bottom = 0.771397
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="IsabelleHairLBL" type="Label" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Isabelle's Bun"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="IsabelleHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/IsabelleHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.561772
+anchor_top = 0.208792
+anchor_right = 1.52595
+anchor_bottom = 0.808792
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="NormanHairLBL" type="Label" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Norman's Pompadour"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="NormanHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/NormanHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.566195
+anchor_top = 0.178851
+anchor_right = 1.52152
+anchor_bottom = 0.778851
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="AngeloHairLBL" type="Label" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Angelo's Angsty Cut"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="AngeloHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/AngeloHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.521412
+anchor_top = 0.216246
+anchor_right = 1.56631
+anchor_bottom = 0.816246
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="EthanHairLBL" type="Label" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Ethan's Slicked Back"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="EthanHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/EthanHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.521412
+anchor_top = 0.216246
+anchor_right = 1.56631
+anchor_bottom = 0.816246
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="HanaHairLBL" type="Label" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Hana's Fluffly Bob"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="HanaHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/HanaHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.521412
+anchor_top = 0.216246
+anchor_right = 1.56631
+anchor_bottom = 0.816246
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="CaseyHairLBL" type="Label" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Leo's Curtains"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CaseyHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/CaseyHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.521412
+anchor_top = 0.216246
+anchor_right = 1.56631
+anchor_bottom = 0.816246
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="AdaHairLBL" type="Label" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Ada Wrong Bob"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="AdaHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/AdaHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.521412
+anchor_top = 0.216246
+anchor_right = 1.56631
+anchor_bottom = 0.816246
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="VitoHairLBL" type="Label" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Vito's Personal Pomade"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="VitoHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/VitoHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.521412
+anchor_top = 0.216246
+anchor_right = 1.56631
+anchor_bottom = 0.816246
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="AgnaHairLBL" type="Label" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Agna's Long Curls"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="AgnaHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/AgnaHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.521412
+anchor_top = 0.216246
+anchor_right = 1.56631
+anchor_bottom = 0.816246
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="MerylHairLBL" type="Label" parent="TabContainer/Hair/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Meryl's Pointy Bob"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MerylHairBTN" type="Button" parent="TabContainer/Hair/ScrollContainer/GridContainer/MerylHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.521412
+anchor_top = 0.216246
+anchor_right = 1.56631
+anchor_bottom = 0.816246
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="Beards" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="FacialHairColorPicker" type="ColorPicker" parent="TabContainer/Beards"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.246095
+anchor_top = -1.85915
+anchor_right = 0.720877
+anchor_bottom = -0.138945
+theme = ExtResource("2_4fllo")
+edit_alpha = false
+picker_shape = 1
+color_modes_visible = false
+sliders_visible = false
+hex_visible = false
+presets_visible = false
+metadata/_edit_use_anchors_ = true
+
+[node name="RemoveFacialHair" type="Button" parent="TabContainer/Beards"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0347826
+anchor_top = -0.740933
+anchor_right = 0.217391
+anchor_bottom = -0.430052
+theme = ExtResource("2_4fllo")
+text = "Remove"
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Beards"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.093264
+anchor_right = 0.966956
+anchor_bottom = 0.963728
+metadata/_edit_use_anchors_ = true
+
+[node name="GridContainer" type="GridContainer" parent="TabContainer/Beards/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+theme_override_constants/v_separation = -10
+
+[node name="DavidFacialHairLBL" type="Label" parent="TabContainer/Beards/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "David's Stache"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DavidFacialHairBTN" type="Button" parent="TabContainer/Beards/ScrollContainer/GridContainer/DavidFacialHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.967975
+anchor_top = 0.19941
+anchor_right = 1.91875
+anchor_bottom = 0.79941
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="ZachariahFacialHairLBL" type="Label" parent="TabContainer/Beards/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Zachariah's Goatee"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ZachariahFacialHairBTN" type="Button" parent="TabContainer/Beards/ScrollContainer/GridContainer/ZachariahFacialHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.986552
+anchor_top = 0.192131
+anchor_right = 1.95172
+anchor_bottom = 0.822131
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="ScottsFacialHairLBL" type="Label" parent="TabContainer/Beards/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Scotts' Stache"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ScottsFacialHairBTN" type="Button" parent="TabContainer/Beards/ScrollContainer/GridContainer/ScottsFacialHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.986629
+anchor_top = 0.179526
+anchor_right = 1.92695
+anchor_bottom = 0.789526
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="MarsFacialHairLBL" type="Label" parent="TabContainer/Beards/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Mars' Beard"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MarsFacialHairBTN" type="Button" parent="TabContainer/Beards/ScrollContainer/GridContainer/MarsFacialHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.986629
+anchor_top = 0.179526
+anchor_right = 1.92695
+anchor_bottom = 0.789526
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="Face" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="FaceColorPicker" type="ColorPicker" parent="TabContainer/Face"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.246095
+anchor_top = -1.85915
+anchor_right = 0.720877
+anchor_bottom = -0.138945
+theme = ExtResource("2_4fllo")
+edit_alpha = false
+picker_shape = 1
+color_modes_visible = false
+sliders_visible = false
+hex_visible = false
+presets_visible = false
+metadata/_edit_use_anchors_ = true
+
+[node name="RemoveFace" type="Button" parent="TabContainer/Face"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0347826
+anchor_top = -0.740933
+anchor_right = 0.217391
+anchor_bottom = -0.430052
+theme = ExtResource("2_4fllo")
+text = "Remove"
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Face"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.093264
+anchor_right = 0.966956
+anchor_bottom = 0.963728
+metadata/_edit_use_anchors_ = true
+
+[node name="GridContainer" type="GridContainer" parent="TabContainer/Face/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+theme_override_constants/v_separation = -10
+
+[node name="AgnaFaceLBL" type="Label" parent="TabContainer/Face/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Agna Freckles"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="AgnaFaceBTN" type="Button" parent="TabContainer/Face/ScrollContainer/GridContainer/AgnaFaceLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.967975
+anchor_top = 0.19941
+anchor_right = 1.91875
+anchor_bottom = 0.79941
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="RickyFaceLBL" type="Label" parent="TabContainer/Face/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Ricky's Moles"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="RickyFaceBTN" type="Button" parent="TabContainer/Face/ScrollContainer/GridContainer/RickyFaceLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.986552
+anchor_top = 0.192131
+anchor_right = 1.95172
+anchor_bottom = 0.822131
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="WilhelmFaceLBL" type="Label" parent="TabContainer/Face/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "The Wilhelm"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="WilhelmFaceBTN" type="Button" parent="TabContainer/Face/ScrollContainer/GridContainer/WilhelmFaceLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.986629
+anchor_top = 0.179526
+anchor_right = 1.92695
+anchor_bottom = 0.789526
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="YorkFaceLBL" type="Label" parent="TabContainer/Face/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "York's Little Friend"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="YorkFaceBTN" type="Button" parent="TabContainer/Face/ScrollContainer/GridContainer/YorkFaceLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.986629
+anchor_top = 0.179526
+anchor_right = 1.92695
+anchor_bottom = 0.789526
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="EddieFaceLBL" type="Label" parent="TabContainer/Face/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Eddie's Beak"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="EddieFaceBTN" type="Button" parent="TabContainer/Face/ScrollContainer/GridContainer/EddieFaceLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.986629
+anchor_top = 0.179526
+anchor_right = 1.92695
+anchor_bottom = 0.789526
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="RemyFaceLBL" type="Label" parent="TabContainer/Face/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Remy's Snout"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="RemyFaceBTN" type="Button" parent="TabContainer/Face/ScrollContainer/GridContainer/RemyFaceLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.986629
+anchor_top = 0.179526
+anchor_right = 1.92695
+anchor_bottom = 0.789526
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="Brows" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3
+
+[node name="BrowsColorPicker" type="ColorPicker" parent="TabContainer/Brows"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.246094
+anchor_top = -1.85915
+anchor_right = 0.720877
+anchor_bottom = -0.138943
+theme = ExtResource("2_4fllo")
+picker_shape = 1
+color_modes_visible = false
+sliders_visible = false
+hex_visible = false
+presets_visible = false
+metadata/_edit_use_anchors_ = true
+
+[node name="RemoveBrows" type="Button" parent="TabContainer/Brows"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0347826
+anchor_top = -0.740931
+anchor_right = 0.217392
+anchor_bottom = -0.430051
+theme = ExtResource("2_4fllo")
+text = "Remove"
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Brows"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.093264
+anchor_right = 0.967
+anchor_bottom = 0.963728
+metadata/_edit_use_anchors_ = true
+
+[node name="GridContainer" type="GridContainer" parent="TabContainer/Brows/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+theme_override_constants/v_separation = -10
+
+[node name="RogerBrowsLBL" type="Label" parent="TabContainer/Brows/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Roger's Flat Face
+"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="RogerBrowsBTN" type="Button" parent="TabContainer/Brows/ScrollContainer/GridContainer/RogerBrowsLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.685188
+anchor_top = 0.179483
+anchor_right = 1.62991
+anchor_bottom = 0.779483
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="ShaunBrowsLBL" type="Label" parent="TabContainer/Brows/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Shaun's Anxious Face"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ShaunBrowsBTN" type="Button" parent="TabContainer/Brows/ScrollContainer/GridContainer/ShaunBrowsLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.699666
+anchor_top = 0.186154
+anchor_right = 1.58746
+anchor_bottom = 0.796154
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="statia_browsLBL" type="Label" parent="TabContainer/Brows/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Statia's Styled Brows"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="statia_brows_BTN" type="Button" parent="TabContainer/Brows/ScrollContainer/GridContainer/statia_browsLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.699666
+anchor_top = 0.234911
+anchor_right = 1.59241
+anchor_bottom = 0.824911
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="york_brows_LBL" type="Label" parent="TabContainer/Brows/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "York's Inquisitive Brows"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="york_brows_BTN" type="Button" parent="TabContainer/Brows/ScrollContainer/GridContainer/york_brows_LBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.680282
+anchor_top = 0.216329
+anchor_right = 1.61675
+anchor_bottom = 0.806329
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="jamie_brows_LBL" type="Label" parent="TabContainer/Brows/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Jamie's 'Tude"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="jamie_brows_BTN" type="Button" parent="TabContainer/Brows/ScrollContainer/GridContainer/jamie_brows_LBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.680282
+anchor_top = 0.216329
+anchor_right = 1.61675
+anchor_bottom = 0.806329
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="david_brows_LBL" type="Label" parent="TabContainer/Brows/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "David's Zen"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="david_brows_BTN" type="Button" parent="TabContainer/Brows/ScrollContainer/GridContainer/david_brows_LBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.680282
+anchor_top = 0.216329
+anchor_right = 1.61675
+anchor_bottom = 0.806329
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="Eyes" type="TabBar" parent="TabContainer"]
+layout_mode = 2
+metadata/_edit_lock_ = true
+metadata/_tab_index = 4
+
+[node name="RemoveEyes" type="Button" parent="TabContainer/Eyes"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0347826
+anchor_top = -0.740931
+anchor_right = 0.217392
+anchor_bottom = -0.430051
+theme = ExtResource("2_4fllo")
+text = "Remove"
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Eyes"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.093264
+anchor_right = 0.966999
+anchor_bottom = 0.963728
+metadata/_edit_use_anchors_ = true
+
+[node name="GridContainer" type="GridContainer" parent="TabContainer/Eyes/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+theme_override_constants/v_separation = -10
+
+[node name="StatiaEyesLBL" type="Label" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Statia's Doe Eyes"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="StatiaEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/StatiaEyesLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 4.55311
+anchor_top = 8.48948
+anchor_right = 5.84003
+anchor_bottom = 9.72011
+offset_left = -826.0
+offset_top = -826.0
+offset_right = -533.378
+offset_bottom = -889.063
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="MarsEyesLBL" type="Label" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Mars' Peepers"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MarsEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/MarsEyesLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.13653
+anchor_top = 0.233714
+anchor_right = 2.16692
+anchor_bottom = 0.803714
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="YorkEyesLBL" type="Label" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "York's Soft Gaze"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="YorkEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/YorkEyesLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.13653
+anchor_top = 0.229527
+anchor_right = 2.17382
+anchor_bottom = 0.799527
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="ZachEyesLBL" type="Label" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Zach's Orbs"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ZachEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/ZachEyesLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.14344
+anchor_top = 0.216922
+anchor_right = 2.16
+anchor_bottom = 0.796922
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="RogerHairLBL" type="Label" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Roger's Pixels"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="RogerEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/RogerHairLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.14344
+anchor_top = 0.204318
+anchor_right = 2.1669
+anchor_bottom = 0.784318
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="DonnyEyesLBL" type="Label" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Donny's Specs"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DonnyEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/DonnyEyesLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.13653
+anchor_top = 0.191714
+anchor_right = 2.18071
+anchor_bottom = 0.771714
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="MandaEyesLBL" type="Label" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Manda's Stare"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MandaEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/MandaEyesLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.0881
+anchor_top = 0.17911
+anchor_right = 2.22914
+anchor_bottom = 0.75911
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="DavidEyesLBL" type="Label" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "David's Lookers"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DavidEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/DavidEyesLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.13653
+anchor_top = 0.233842
+anchor_right = 2.18761
+anchor_bottom = 0.813842
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="NormanEyesLBL" type="Label" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Norman's Dizzies"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="NormanEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/NormanEyesLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.13653
+anchor_top = 0.221238
+anchor_right = 2.18761
+anchor_bottom = 0.801238
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="AngeloEyesLBL" type="Label" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Angelo's Mood"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="AngeloEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/AngeloEyesLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.14344
+anchor_top = 0.208634
+anchor_right = 2.18069
+anchor_bottom = 0.788634
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="EthanEyesLBL" type="Label" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Ethan's Shadow"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="EthanEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/EthanEyesLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.14344
+anchor_top = 0.208634
+anchor_right = 2.18069
+anchor_bottom = 0.788634
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="JamieEyesLBL" type="Label" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Sleepy Jamie"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="JamieEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/JamieEyesLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.14344
+anchor_top = 0.208634
+anchor_right = 2.18069
+anchor_bottom = 0.788634
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="AgnaEyesLBL" type="Label" parent="TabContainer/Eyes/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Anime Agna Eyes"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="AgnaEyesBTN" type="Button" parent="TabContainer/Eyes/ScrollContainer/GridContainer/AgnaEyesLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.14344
+anchor_top = 0.208634
+anchor_right = 2.18069
+anchor_bottom = 0.788634
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="HSlider" type="HSlider" parent="TabContainer/Eyes"]
+layout_mode = 0
+anchor_left = 0.318668
+anchor_top = 1.31581
+anchor_right = 0.610897
+anchor_bottom = 1.39872
+offset_top = -1.52588e-05
+metadata/_edit_use_anchors_ = true
+
+[node name="Mouth" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 5
+
+[node name="RemoveMouths" type="Button" parent="TabContainer/Mouth"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0347826
+anchor_top = -0.740931
+anchor_right = 0.217392
+anchor_bottom = -0.430051
+theme = ExtResource("2_4fllo")
+text = "Remove"
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Mouth"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0439024
+anchor_top = 0.0679612
+anchor_right = 0.912195
+anchor_bottom = 0.92233
+offset_left = -25.2439
+offset_top = 4.88346
+offset_right = 31.5125
+offset_bottom = 7.98991
+
+[node name="GridContainer" type="GridContainer" parent="TabContainer/Mouth/ScrollContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+theme_override_constants/v_separation = -10
+
+[node name="StatiaMouthLBL" type="Label" parent="TabContainer/Mouth/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Statia's :3"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="StatiaMouthBTN" type="Button" parent="TabContainer/Mouth/ScrollContainer/GridContainer/StatiaMouthLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.10533
+anchor_top = 0.22948
+anchor_right = 2.10801
+anchor_bottom = 0.80948
+offset_right = 3.05176e-05
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="MandaMouthLBL" type="Label" parent="TabContainer/Mouth/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Manda's Awe"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MandaMouthBTN" type="Button" parent="TabContainer/Mouth/ScrollContainer/GridContainer/MandaMouthLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.09227
+anchor_top = 0.236154
+anchor_right = 2.12107
+anchor_bottom = 0.776154
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="DonnyMouthLBL" type="Label" parent="TabContainer/Mouth/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Donny's Surprise"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DonnyMouthBTN" type="Button" parent="TabContainer/Mouth/ScrollContainer/GridContainer/DonnyMouthLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.10564
+anchor_top = 0.246361
+anchor_right = 2.10769
+anchor_bottom = 0.786361
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="MarsMouthLBL" type="Label" parent="TabContainer/Mouth/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Mars' Excitement"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MarsMouthBTN" type="Button" parent="TabContainer/Mouth/ScrollContainer/GridContainer/MarsMouthLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.10432
+anchor_top = 0.267425
+anchor_right = 2.11279
+anchor_bottom = 0.787425
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="DavidMouthLBL" type="Label" parent="TabContainer/Mouth/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "David's Lip"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DavidMouthBTN" type="Button" parent="TabContainer/Mouth/ScrollContainer/GridContainer/DavidMouthLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.10432
+anchor_top = 0.254821
+anchor_right = 2.11279
+anchor_bottom = 0.764821
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="NormanMouthLBL" type="Label" parent="TabContainer/Mouth/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Norman's Frown"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="NormanMouthBTN" type="Button" parent="TabContainer/Mouth/ScrollContainer/GridContainer/NormanMouthLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.11091
+anchor_top = 0.242217
+anchor_right = 2.10619
+anchor_bottom = 0.732217
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="AngeloMouthLBL" type="Label" parent="TabContainer/Mouth/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Angelo's Grimace"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="AngeloMouthBTN" type="Button" parent="TabContainer/Mouth/ScrollContainer/GridContainer/AngeloMouthLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.11751
+anchor_top = 0.246446
+anchor_right = 2.09301
+anchor_bottom = 0.736446
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="EthanMouthLBL" type="Label" parent="TabContainer/Mouth/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Ethan's Smile"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="EthanMouthBTN" type="Button" parent="TabContainer/Mouth/ScrollContainer/GridContainer/EthanMouthLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.11751
+anchor_top = 0.246446
+anchor_right = 2.09301
+anchor_bottom = 0.736446
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="AgnaMouthLBL" type="Label" parent="TabContainer/Mouth/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Agna's Anime Gasp"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="AgnaMouthBTN" type="Button" parent="TabContainer/Mouth/ScrollContainer/GridContainer/AgnaMouthLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.11751
+anchor_top = 0.246446
+anchor_right = 2.09301
+anchor_bottom = 0.736446
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="JasonMouthLBL" type="Label" parent="TabContainer/Mouth/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Jason's :D"
+label_settings = SubResource("LabelSettings_12wlj")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="JasonMouthBTN" type="Button" parent="TabContainer/Mouth/ScrollContainer/GridContainer/JasonMouthLBL"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.11751
+anchor_top = 0.246446
+anchor_right = 2.09301
+anchor_bottom = 0.736446
+theme = ExtResource("4_5csx1")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="SceneNavigation/Main Menu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="SceneNavigation/Reset" to="." method="_on_reset_pressed"]
+[connection signal="pressed" from="SceneNavigation/Pal Menu" to="." method="_on_pal_menu_pressed"]
+[connection signal="pressed" from="SceneNavigation/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="SceneNavigation/Quit/PinkPanel/YellowPanel/Yes" to="." method="_on_no_pressed"]
+[connection signal="pressed" from="SceneNavigation/Quit/PinkPanel/YellowPanel/Yes" to="." method="_on_yes_pressed"]
+[connection signal="pressed" from="SceneNavigation/Quit/PinkPanel/YellowPanel/No" to="." method="_on_no_pressed"]
+[connection signal="pressed" from="SkinTone" to="." method="_on_skin_tone_pressed"]
+[connection signal="color_changed" from="TabContainer/Hair/ColorPicker" to="." method="_on_color_picker_color_changed"]
+[connection signal="pressed" from="TabContainer/Hair/RemoveHair" to="." method="_on_remove_hair_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/RogerHairLBL/RogerHairBTN" to="." method="_on_roger_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/YorkHairLBL/YorkHairBTN" to="." method="_on_york_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/ZachHairLBL/ZachHairBTN" to="." method="_on_zach_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/MarsHairLBL/MarsHairBTN" to="." method="_on_mars_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/StatiaHairLBL/StatiaHairBTN" to="." method="_on_statia_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/DonnyHairLBL/DonnyHairBTN" to="." method="_on_donny_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/MandaHairLBL/MandaHairBTN" to="." method="_on_manda_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/DavidHairLBL/DavidHairBTN" to="." method="_on_david_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/IsabelleHairLBL/IsabelleHairBTN" to="." method="_on_isabelle_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/NormanHairLBL/NormanHairBTN" to="." method="_on_norman_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/AngeloHairLBL/AngeloHairBTN" to="." method="_on_angelo_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/EthanHairLBL/EthanHairBTN" to="." method="_on_ethan_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/HanaHairLBL/HanaHairBTN" to="." method="_on_hana_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/CaseyHairLBL/CaseyHairBTN" to="." method="_on_casey_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/AdaHairLBL/AdaHairBTN" to="." method="_on_ada_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/VitoHairLBL/VitoHairBTN" to="." method="_on_vito_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/AgnaHairLBL/AgnaHairBTN" to="." method="_on_agna_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Hair/ScrollContainer/GridContainer/MerylHairLBL/MerylHairBTN" to="." method="_on_meryl_hair_btn_pressed"]
+[connection signal="color_changed" from="TabContainer/Beards/FacialHairColorPicker" to="." method="_on_facial_hair_color_picker_color_changed"]
+[connection signal="pressed" from="TabContainer/Beards/RemoveFacialHair" to="." method="_on_remove_facial_hair_pressed"]
+[connection signal="pressed" from="TabContainer/Beards/ScrollContainer/GridContainer/DavidFacialHairLBL/DavidFacialHairBTN" to="." method="_on_david_facial_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Beards/ScrollContainer/GridContainer/ZachariahFacialHairLBL/ZachariahFacialHairBTN" to="." method="_on_zachariah_facial_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Beards/ScrollContainer/GridContainer/ScottsFacialHairLBL/ScottsFacialHairBTN" to="." method="_on_scotts_facial_hair_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Beards/ScrollContainer/GridContainer/MarsFacialHairLBL/MarsFacialHairBTN" to="." method="_on_mars_facial_hair_btn_pressed"]
+[connection signal="color_changed" from="TabContainer/Face/FaceColorPicker" to="." method="_on_face_color_picker_color_changed"]
+[connection signal="pressed" from="TabContainer/Face/RemoveFace" to="." method="_on_remove_face_pressed"]
+[connection signal="pressed" from="TabContainer/Face/ScrollContainer/GridContainer/AgnaFaceLBL/AgnaFaceBTN" to="." method="_on_agna_face_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Face/ScrollContainer/GridContainer/RickyFaceLBL/RickyFaceBTN" to="." method="_on_ricky_face_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Face/ScrollContainer/GridContainer/WilhelmFaceLBL/WilhelmFaceBTN" to="." method="_on_wilhelm_face_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Face/ScrollContainer/GridContainer/YorkFaceLBL/YorkFaceBTN" to="." method="_on_york_face_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Face/ScrollContainer/GridContainer/EddieFaceLBL/EddieFaceBTN" to="." method="_on_eddie_face_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Face/ScrollContainer/GridContainer/RemyFaceLBL/RemyFaceBTN" to="." method="_on_remy_face_btn_pressed"]
+[connection signal="color_changed" from="TabContainer/Brows/BrowsColorPicker" to="." method="_on_brows_color_picker_color_changed"]
+[connection signal="pressed" from="TabContainer/Brows/RemoveBrows" to="." method="_on_remove_brows_pressed"]
+[connection signal="pressed" from="TabContainer/Brows/ScrollContainer/GridContainer/RogerBrowsLBL/RogerBrowsBTN" to="." method="_on_roger_brows_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Brows/ScrollContainer/GridContainer/ShaunBrowsLBL/ShaunBrowsBTN" to="." method="_on_shaun_brows_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Brows/ScrollContainer/GridContainer/statia_browsLBL/statia_brows_BTN" to="." method="_on_statia_brows_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Brows/ScrollContainer/GridContainer/york_brows_LBL/york_brows_BTN" to="." method="_on_york_brows_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Brows/ScrollContainer/GridContainer/jamie_brows_LBL/jamie_brows_BTN" to="." method="_on_jamie_brows_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Brows/ScrollContainer/GridContainer/david_brows_LBL/david_brows_BTN" to="." method="_on_david_brows_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/RemoveEyes" to="." method="_on_remove_eyes_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/StatiaEyesLBL/StatiaEyesBTN" to="." method="_on_statia_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/MarsEyesLBL/MarsEyesBTN" to="." method="_on_mars_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/YorkEyesLBL/YorkEyesBTN" to="." method="_on_york_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/ZachEyesLBL/ZachEyesBTN" to="." method="_on_zach_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/RogerHairLBL/RogerEyesBTN" to="." method="_on_roger_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/DonnyEyesLBL/DonnyEyesBTN" to="." method="_on_donny_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/MandaEyesLBL/MandaEyesBTN" to="." method="_on_manda_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/DavidEyesLBL/DavidEyesBTN" to="." method="_on_david_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/NormanEyesLBL/NormanEyesBTN" to="." method="_on_norman_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/AngeloEyesLBL/AngeloEyesBTN" to="." method="_on_angelo_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/EthanEyesLBL/EthanEyesBTN" to="." method="_on_ethan_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/JamieEyesLBL/JamieEyesBTN" to="." method="_on_jamie_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Eyes/ScrollContainer/GridContainer/AgnaEyesLBL/AgnaEyesBTN" to="." method="_on_agna_eyes_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Mouth/RemoveMouths" to="." method="_on_remove_mouths_pressed"]
+[connection signal="pressed" from="TabContainer/Mouth/ScrollContainer/GridContainer/StatiaMouthLBL/StatiaMouthBTN" to="." method="_on_statia_mouth_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Mouth/ScrollContainer/GridContainer/MandaMouthLBL/MandaMouthBTN" to="." method="_on_manda_mouth_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Mouth/ScrollContainer/GridContainer/DonnyMouthLBL/DonnyMouthBTN" to="." method="_on_donny_mouth_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Mouth/ScrollContainer/GridContainer/MarsMouthLBL/MarsMouthBTN" to="." method="_on_mars_mouth_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Mouth/ScrollContainer/GridContainer/DavidMouthLBL/DavidMouthBTN" to="." method="_on_david_mouth_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Mouth/ScrollContainer/GridContainer/NormanMouthLBL/NormanMouthBTN" to="." method="_on_norman_mouth_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Mouth/ScrollContainer/GridContainer/AngeloMouthLBL/AngeloMouthBTN" to="." method="_on_angelo_mouth_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Mouth/ScrollContainer/GridContainer/EthanMouthLBL/EthanMouthBTN" to="." method="_on_ethan_mouth_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Mouth/ScrollContainer/GridContainer/AgnaMouthLBL/AgnaMouthBTN" to="." method="_on_agna_mouth_btn_pressed"]
+[connection signal="pressed" from="TabContainer/Mouth/ScrollContainer/GridContainer/JasonMouthLBL/JasonMouthBTN" to="." method="_on_jason_mouth_btn_pressed"]
