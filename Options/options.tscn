@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://cyly2nv040j2q"]
+
+[ext_resource type="Script" path="res://Scenes/Game/Options/options.gd" id="1_43l53"]
+[ext_resource type="FontFile" uid="uid://bdojgg7520x2o" path="res://Fonts/starborn/Starborn.ttf" id="1_eywlr"]
+[ext_resource type="Theme" uid="uid://cqpnkrk4vncpa" path="res://UI/DefaultTheme.tres" id="1_gm6we"]
+
+[node name="Options" type="Node"]
+script = ExtResource("1_43l53")
+
+[node name="Title" type="Label" parent="."]
+offset_left = -86.0
+offset_top = 1.0
+offset_right = 779.0
+offset_bottom = 141.0
+theme_override_colors/font_color = Color(0.419608, 0.776471, 0.796078, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.968627, 0.870588, 0.721569, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("1_eywlr")
+theme_override_font_sizes/font_size = 125
+text = "Options"
+horizontal_alignment = 1
+
+[node name="Back" type="Button" parent="."]
+offset_left = 1552.0
+offset_top = 879.0
+offset_right = 1902.0
+offset_bottom = 960.0
+theme = ExtResource("1_gm6we")
+theme_override_font_sizes/font_size = 30
+text = "Back"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
